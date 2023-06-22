@@ -1,20 +1,20 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { FormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from "./app.component";
-import { HelloComponent } from "./hello.component";
-import { AuthorsListComponent } from "./authors/authors-list.component";
-import { AuthorDetailsComponent } from "./authors/authors-details.component";
+import { AppComponent } from './app.component';
+import { HelloComponent } from './hello.component';
+import { AuthorDetailComponent } from './authors/author-detail.component';
+import { AuthorListComponent } from './authors/author-list.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [
     AppComponent,
     HelloComponent,
-    AuthorsListComponent,
-    AuthorDetailsComponent
+    AuthorListComponent,
+    AuthorDetailComponent,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
